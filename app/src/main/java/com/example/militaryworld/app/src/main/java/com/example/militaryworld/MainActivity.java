@@ -2,7 +2,7 @@ package com.example.militaryworld;
 
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,19 +12,43 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        TextView title = new TextView(this);
-        title.setText("☀️ MILITARY WORLD");
-        title.setTextSize(28);
+        setContentView(R.layout.activity_main);
 
-        Button countries = new Button(this);
-        countries.setText("🌍 Countries");
+        Button countries = findViewById(R.id.countriesButton);
+        Button tanks = findViewById(R.id.tanksButton);
+        Button aircraft = findViewById(R.id.aircraftButton);
+        Button helicopters = findViewById(R.id.helicopterButton);
+        Button ships = findViewById(R.id.shipsButton);
+        Button submarines = findViewById(R.id.submarineButton);
+        Button missiles = findViewById(R.id.missileButton);
+        Button search = findViewById(R.id.searchButton);
 
-        Button aircraft = new Button(this);
-        aircraft.setText("✈️ Aircraft");
+        countries.setOnClickListener(v ->
+                showMessage("🌍 Countries"));
 
-        Button tanks = new Button(this);
-        tanks.setText("🪖 Tanks");
+        tanks.setOnClickListener(v ->
+                showMessage("🪖 Tanks"));
 
-        setContentView(title);
+        aircraft.setOnClickListener(v ->
+                showMessage("✈️ Aircraft"));
+
+        helicopters.setOnClickListener(v ->
+                showMessage("🚁 Helicopters"));
+
+        ships.setOnClickListener(v ->
+                showMessage("🚢 Ships"));
+
+        submarines.setOnClickListener(v ->
+                showMessage("⚓ Submarines"));
+
+        missiles.setOnClickListener(v ->
+                showMessage("🚀 Missiles"));
+
+        search.setOnClickListener(v ->
+                showMessage("🔍 Search"));
+    }
+
+    private void showMessage(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }
