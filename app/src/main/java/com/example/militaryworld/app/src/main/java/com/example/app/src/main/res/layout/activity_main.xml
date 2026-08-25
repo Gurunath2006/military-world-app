@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="☀️ MILITARY WORLD"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/countriesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌍 Countries" />
+
+        <Button
+            android:id="@+id/tanksButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🪖 Tanks" />
+
+        <Button
+            android:id="@+id/aircraftButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✈️ Aircraft" />
+
+        <Button
+            android:id="@+id/helicopterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚁 Helicopters" />
+
+        <Button
+            android:id="@+id/shipsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚢 Ships" />
+
+        <Button
+            android:id="@+id/submarineButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚓ Submarines" />
+
+        <Button
+            android:id="@+id/missileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚀 Missiles" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔍 Search" />
+
+    </LinearLayout>
+
+</ScrollView>
